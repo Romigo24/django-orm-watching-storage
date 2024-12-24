@@ -11,19 +11,19 @@ DATABASES = {
         'PORT': env.str('DB_PORT'),
         'NAME': env.str('DB_NAME'),
         'USER': env.str('DB_USER'),
-        'PASSWORD': env('DB_PASSWORD'),
+        'PASSWORD': env.str('DB_PASSWORD'),
     }
 }
 
 INSTALLED_APPS = ['datacenter']
 
-SECRET_KEY = env.str('DB_SECRET_KEY')
+SECRET_KEY = env.str('SECRET_KEY')
 
-DEBUG = env.bool('DB_DEBUG', default=False)
+DEBUG = env.bool('DEBUG', default=False)
 
 ROOT_URLCONF = 'project.urls'
 
-ALLOWED_HOSTS = env.list('DB_ALLOWED_HOSTS')
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['localhost'])
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES = [
