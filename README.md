@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ```python
 python manage.py runserver 0.0.0.0:8000
 ```
-И переходить из браузера по адресу `127.0.0.1:800`
+И переходить из браузера по адресу `127.0.0.1:8000`
 
 
 ![работа сайта](https://github.com/user-attachments/assets/a5eaa5e7-db69-482b-955b-40c953305997)
